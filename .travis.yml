@@ -2,5 +2,12 @@ language: node_js
 node_js:
   - "10"
 install:
-  - npm test  
   - npm install
+build:
+  - npm build
+deploy:
+  - provider: script
+    script: ./deploy.sh $TRAVIS_TAG $DOCKER_USERNAME $DOCKER_PASSWORD
+    skip_cleanup: true
+    on:
+      tags: true
