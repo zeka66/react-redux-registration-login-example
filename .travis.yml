@@ -5,6 +5,8 @@ install:
   - npm install
 build:
   - npm build
+before_script:
+  - chmod a+x ./deploy.sh
 deploy:
   - provider: script
     script: ./deploy.sh $TRAVIS_TAG $DOCKER_USERNAME $DOCKER_PASSWORD
