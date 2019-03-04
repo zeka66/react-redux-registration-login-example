@@ -12,8 +12,7 @@ DOCKER_PASSWORD=$3
 # cp Dockerfile bin/Release/netcoreapp2.2/publish/
 
 # Build the Docker images
-docker build -t zeka66/react-redux-registration-login-example:$TAG zeka66/react-redux-registration-login-example/node_modules/react
-docker tag zeka66/react-redux-registration-login-example:$TAG zeka66/react-redux-registration-login-example:latest
+docker build -t zeka66/react-redux-registration-login-example .
 
 # Login to Docker Hub and upload images
 docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
