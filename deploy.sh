@@ -7,7 +7,7 @@ DOCKER_PASSWORD=$3
 
 
 # Build the Docker images
-docker build -t zeka66/react-redux-registration-login-example .
+docker build -t zeka66/react-redux-registration-login-example:latest
 docker images
 docker tag zeka66/react-redux-registration-login-example:$TAG zeka66/react-redux-registration-login-example:latest
 
