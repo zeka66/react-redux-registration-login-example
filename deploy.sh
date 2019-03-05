@@ -13,5 +13,5 @@ docker tag zeka66/react-redux-registration-login-example:$TAG zeka66/react-redux
 
 # Login to Docker Hub and upload images
 docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-docker push zeka66/react-redux-registration-login-example:latest
+docker push zeka66/react-redux-registration-login-example:$TAG
 
