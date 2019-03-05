@@ -8,6 +8,7 @@ DOCKER_PASSWORD=$3
 
 # Build the Docker images
 docker build -t zeka66/react-redux-registration-login-example .
+docker tag zeka66/aspnet-core-registration-login-api:$TAG
 
 # Login to Docker Hub and upload images
 docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
