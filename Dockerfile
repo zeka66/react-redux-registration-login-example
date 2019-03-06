@@ -1,9 +1,6 @@
 # base image
 FROM node:9.6.1
 
-# set working directory
-WORKDIR .
-
 # add `/usr/node_modules/.bin` to $PATH
 ENV PATH /usr/node_modules/.bin:$PATH
 
